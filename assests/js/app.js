@@ -47,39 +47,39 @@ function getRandomImage(imgAr, path) {
     document.getElementById('logo').innerHTML = imgStr;
 } 
 
-var favicon_images = [
-  './assests/imgs/duck/frame_00_delay-0.04s.png',
-  './assests/imgs/duck/frame_01_delay-0.04s.png',
-  './assests/imgs/duck/frame_02_delay-0.04s.png',
-  './assests/imgs/duck/frame_03_delay-0.04s.png',
-  './assests/imgs/duck/frame_04_delay-0.04s.png',
-  './assests/imgs/duck/frame_05_delay-0.04s.png',
-  './assests/imgs/duck/frame_06_delay-0.04s.png',
-  './assests/imgs/duck/frame_07_delay-0.04s.png',
-  './assests/imgs/duck/frame_08_delay-0.04s.png',
-  './assests/imgs/duck/frame_09_delay-0.04s.png',
-  './assests/imgs/duck/frame_10_delay-0.04s.png',
-  './assests/imgs/duck/frame_11_delay-0.04s.png',
-  './assests/imgs/duck/frame_12_delay-0.04s.png',
-  './assests/imgs/duck/frame_13_delay-0.04s.png',
-  './assests/imgs/duck/frame_14_delay-0.04s.png'
+// var favicon_images = [
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_00_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_01_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_02_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_03_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_04_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_05_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_06_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_07_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_08_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_09_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_10_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_11_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_12_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_13_delay-0.04s.png',
+//   'https://bluecalculator.github.io/offline/assests/imgs/duck/frame_14_delay-0.04s.png'
 
-],
-image_counter = 0; 
+// ],
+// image_counter = 0; 
 
-setInterval(function() {
-if(document.querySelector("link[rel='icon']") !== null)
-document.querySelector("link[rel='icon']").remove();
-if(document.querySelector("link[rel='shortcut icon']") !== null)
-document.querySelector("link[rel='shortcut icon']").remove();
+// setInterval(function() {
+// if(document.querySelector("link[rel='icon']") !== null)
+// document.querySelector("link[rel='icon']").remove();
+// if(document.querySelector("link[rel='shortcut icon']") !== null)
+// document.querySelector("link[rel='shortcut icon']").remove();
 
-document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" href="' + favicon_images[image_counter] + '" type="image/gif">');
+// document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" href="' + favicon_images[image_counter] + '" type="image/gif">');
   
-if(image_counter == favicon_images.length -1)
-image_counter = 0;
-else
-image_counter++;
-}, 100);
+// if(image_counter == favicon_images.length -1)
+// image_counter = 0;
+// else
+// image_counter++;
+// }, 100);
 
 
 
